@@ -4,36 +4,41 @@ export interface Project {
   description: string
   stack: string[]
   href: string
+  liveHref?: string
 }
 
 export const projects: Project[] = [
   {
-    num: 'VHS STYLE 01',
+    num: 'TAPE 01',
     title: 'Job Application Tracker',
     description:
-      'Full-stack tracker with an ML URL parser — a fine-tuned DistilBERT NER model with a deterministic-first fallback. Auth, kanban, analytics, dark mode.',
+      'Full stack tracker with an ML URL parser, a fine-tuned DistilBERT NER model with a deterministic first fallback. Auth, kanban, analytics, dark mode.',
     stack: ['Next.js', 'Supabase', 'DistilBERT', 'Modal'],
-    href: '#',
+    href: 'https://github.com/Brodie191/JobTracker',
+    liveHref: 'https://job-tracker-tau-liart.vercel.app/auth/login',
   },
   {
-    num: 'VHS STYLE 02',
-    title: 'Project Two',
-    description: 'One or two lines on what it does and why it was hard. Keep it punchy.',
-    stack: ['Tech', 'Tech'],
+    num: 'TAPE 02',
+    title: 'DIGITAL ARCHIVES',
+    description: 'Full Stack HI-RES confidential image sharing platform. (A passion project of mine)',
+    stack: ['Next.js', 'Supabase'],
     href: '#',
+    liveHref:'#',
   },
   {
-    num: 'VHS STYLE 03',
-    title: 'Project Three',
-    description: 'Another short blurb. Link out to the repo or live demo.',
-    stack: ['Tech', 'Tech'],
-    href: '#',
+    num: 'TAPE 03',
+    title: 'PASSCRACK',
+    description: 'A simple password strength checker and cracker. This was one of my first side projects I made.',
+    stack: ['HTML', 'Github'],
+    href: 'https://github.com/Brodie191/Passcrack.git',
+    liveHref: 'https://brodie191.github.io/Passcrack/',
   },
   {
-    num: 'VHS STYLE 04',
-    title: 'Project Four',
-    description: 'Add as many tiles as you like — the grid wraps automatically.',
-    stack: ['Tech', 'Tech'],
-    href: '#',
+    num: 'TAPE 04',
+    title: 'AICOV',
+    description: 'An AI cover letter generator, to get into using AI in my projects.',
+    stack: ['Next.js', 'CLAUDE API'],
+    href: 'https://github.com/Brodie191/AICOV.git',
+    liveHref:'https://ai-cover-letter-generator-iota.vercel.app/',
   },
 ]

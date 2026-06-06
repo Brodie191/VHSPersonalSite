@@ -16,7 +16,12 @@ export default function ProjectsGrid() {
                 <span key={tech} className="chip">{tech}</span>
               ))}
             </div>
-            <a className="go" href={project.href}>▶ PLAY TAPE</a>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+              <a className="go" href={project.href}>▶ GITHUB</a>
+              {project.liveHref && (
+                <a className="go" href={project.liveHref}>▶ LIVE</a>
+              )}
+            </div>
           </article>
         ))}
       </div>
