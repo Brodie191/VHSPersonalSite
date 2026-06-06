@@ -22,8 +22,7 @@ export const projects: Project[] = [
     title: 'DIGITAL ARCHIVES',
     description: 'Full Stack HI-RES confidential image sharing platform. (A passion project of mine)',
     stack: ['Next.js', 'Supabase'],
-    href: '#',
-    liveHref:'#',
+    href: 'https://github.com/Brodie191/Digital-Archives',
   },
   {
     num: 'TAPE 03',
