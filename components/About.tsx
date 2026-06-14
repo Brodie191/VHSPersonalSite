@@ -7,7 +7,7 @@ export default function About() {
       <div className="sec-title">ABOUT.TXT</div>
       {/* EDIT bio */}
       <p className="about-text">
-        I&apos;m a self directed developer and a final year CS student working across full-stack web, applied ML, and many domains of cyber security.
+        I&apos;m a self directed developer and recent CS bachelors graduate working across full-stack web, applied ML, and many domains of cyber security.
         I care about real technical depth, not demos that fall over the second you poke them.
       </p>
       <p className="about-text">
