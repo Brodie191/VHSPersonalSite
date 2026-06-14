@@ -40,4 +40,12 @@ export const projects: Project[] = [
     href: 'https://github.com/Brodie191/AICOV.git',
     liveHref:'https://ai-cover-letter-generator-iota.vercel.app/',
   },
+
+  {
+    num: 'TAPE 04',
+    title: 'TRIPWIRE',
+    description: 'A real time transaction tracker that uses ML to distiguish fradulent transactions.',
+    stack:['Next.js', 'React', 'Type Script 5', 'Tailwind CSS', 'shadcn', 'lucide-react', 'Supabase', 'Upstash', 'Zod4'],
+    href:'https://github.com/Brodie191/Tripwire.git',
+  },
 ]
