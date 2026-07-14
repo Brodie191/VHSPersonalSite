@@ -16,12 +16,12 @@ export default function Contact() {
         </div>
         <div className="notepad-body">
           {/* EDIT: your links */}
-          <a href="mailto:sbabhair@outlook.com">sbabhair@outlook.com</a>
+          <a href="mailto:sbabhair@outlook.com">Email</a>
           <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">
             github.com/Brodie191
           </a>
           <a href="https://linkedin.com/in/SalimBabhair" target="_blank" rel="noopener noreferrer">
-            https://vhs-personal-site.vercel.app
+            linkedin.com/in/salim-b-685613211
           </a>
         </div>
       </div>
