@@ -15,14 +15,9 @@ export default function Contact() {
           <span>Clear</span>
         </div>
         <div className="notepad-body">
-          {/* EDIT: your links */}
           <a href="mailto:sbabhair@outlook.com">Email</a>
-          <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">
-            github.com/Brodie191
-          </a>
-          <a href="https://linkedin.com/in/SalimBabhair" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/salim-b-685613211
-          </a>
+          <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">Brodie191</a>
+          <a href="https://linkedin.com/in/salim-b-685613211" target="_blank" rel="noopener noreferrer">SalimBabhair</a>
         </div>
       </div>
     </section>
