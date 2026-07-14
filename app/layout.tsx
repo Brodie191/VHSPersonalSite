@@ -24,8 +24,8 @@ const anton = Anton({
 })
 
 export const metadata: Metadata = {
-  title: '// TAPE 01 — PERSONAL SITE',
-  description: 'A VHS / CRT personal portfolio.',
+  title: 'Salim Babhair — Portfolio',
+  description: 'Full-stack developer and builder.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
