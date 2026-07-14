@@ -20,7 +20,7 @@ export default function Contact() {
           <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">
             github.com/Brodie191
           </a>
-          <a href="https://linkedin.com/in/SalimBabhair" target="_blank" rel="noopener noreferrer">
+          <a href="linkedin.com/in/salim-b-685613211" target="_blank" rel="noopener noreferrer">
             linkedin.com/in/SalimBabhair
           </a>
         </div>
