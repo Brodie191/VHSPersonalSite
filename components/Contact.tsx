@@ -16,8 +16,8 @@ export default function Contact() {
         </div>
         <div className="notepad-body">
           <a href="mailto:sbabhair@outlook.com">Email</a>
-          <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">@Brodie191</a>
-          <a href="https://linkedin.com/in/salim-b-685613211" target="_blank" rel="noopener noreferrer">Salim Babhair</a>
+          <a href="https://github.com/Brodie191" target="_blank" rel="noopener noreferrer">Github - @Brodie191</a>
+          <a href="https://linkedin.com/in/salim-b-685613211" target="_blank" rel="noopener noreferrer">LinkedIn - Salim Babhair</a>
         </div>
       </div>
     </section>
