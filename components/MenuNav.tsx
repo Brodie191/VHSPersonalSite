@@ -9,14 +9,12 @@ export default function MenuNav() {
   const triggerGlitch = (e: React.MouseEvent) => {
     e.preventDefault()
     const root = document.querySelector('.crt-root') as HTMLElement | null
-    const grain = document.querySelector('.crt-grain') as HTMLElement | null
-    if (!root || !grain) return
-    grain.style.opacity = '0.35'
-    root.style.filter = 'hue-rotate(40deg) contrast(1.3)'
-    setTimeout(() => {
-      grain.style.opacity = '0.07'
-      root.style.filter = ''
-    }, 600)
+    if (!root) return
+    // restart the animation even if fired mid-glitch
+    root.classList.remove('tracking')
+    void root.offsetWidth
+    root.classList.add('tracking')
+    window.setTimeout(() => root.classList.remove('tracking'), 500)
   }
 
   return (
