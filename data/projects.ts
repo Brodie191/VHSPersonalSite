@@ -42,10 +42,18 @@ export const projects: Project[] = [
   },
 
   {
-    num: 'TAPE 04',
+    num: 'TAPE 05',
     title: 'TRIPWIRE',
     description: 'A real time transaction tracker that uses ML to distiguish fradulent transactions.',
     stack:['Next.js', 'React', 'Type Script 5', 'Tailwind CSS', 'shadcn', 'lucide-react', 'Supabase', 'Upstash', 'Zod4'],
     href:'https://github.com/Brodie191/Tripwire.git',
+  },
+
+  {
+    num:,
+    title:,
+    description:,
+    stack:[],
+    href:,
   },
 ]
