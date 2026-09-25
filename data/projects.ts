@@ -10,7 +10,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     num: 'TAPE 01',
-    title: 'Job Application Tracker',
+    title: 'JOB APPLICATION TRACKER',
     description:
       'Full stack tracker with an ML URL parser, a fine-tuned DistilBERT NER model with a deterministic first fallback. Auth, kanban, analytics, dark mode.',
     stack: ['Next.js', 'Supabase', 'DistilBERT', 'Modal'],
