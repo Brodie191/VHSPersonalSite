@@ -49,11 +49,4 @@ export const projects: Project[] = [
     href:'https://github.com/Brodie191/Tripwire.git',
   },
 
-  {
-    num:,
-    title:,
-    description:,
-    stack:[],
-    href:,
-  },
 ]
