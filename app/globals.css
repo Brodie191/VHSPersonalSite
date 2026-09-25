@@ -338,18 +338,38 @@ section { padding: 70px 0; scroll-margin-top: 90px; }
 /* ─── CONTACT (Notepad window) ──────────────────────────────── */
 .notepad {
   background: var(--bg-panel); border: 2px solid var(--blue-lit);
-  max-width: 640px; margin: 0 auto;
+  max-width: 640px; margin: 0 auto; position: relative;
   box-shadow: 0 0 0 4px var(--bg), 0 0 30px rgba(77,77,255,0.4);
+  min-width: 280px; min-height: 200px;
+  display: flex; flex-direction: column;
 }
+.notepad.dragging,
+.notepad.resizing { box-shadow: 0 0 0 4px var(--bg), 0 0 40px rgba(77,77,255,0.65); }
+.notepad.resetting { transition: transform 0.22s ease, width 0.22s ease, height 0.22s ease; }
 .notepad-bar {
   background: var(--blue); color: var(--white);
   display: flex; justify-content: space-between;
   align-items: center; padding: 6px 12px; font-size: 22px;
+  cursor: grab; touch-action: none; user-select: none;
+  flex: 0 0 auto;
 }
-.notepad-bar .dots { letter-spacing: 2px; }
+.notepad.dragging .notepad-bar { cursor: grabbing; }
+.notepad-dots {
+  background: none; border: none; padding: 0; margin: 0;
+  font: inherit; color: inherit; letter-spacing: 2px; cursor: pointer;
+}
+.notepad-dots:hover { color: var(--yellow); }
+.notepad-resize {
+  position: absolute; right: 2px; bottom: 0; width: 22px; height: 22px;
+  display: flex; align-items: flex-end; justify-content: flex-end;
+  padding: 2px; color: var(--blue-lit); opacity: 0.7; font-size: 14px;
+  line-height: 1; cursor: nwse-resize; touch-action: none; user-select: none;
+}
+.notepad-resize:hover { opacity: 1; color: var(--yellow); }
 .notepad-tabs {
   background: var(--blue-lit); color: var(--blue-deep);
   display: flex; align-items: center; gap: 22px; padding: 6px 14px; font-size: 22px;
+  flex: 0 0 auto;
 }
 .notepad-tabs button {
   background: none; border: none; padding: 0; margin: 0;
@@ -360,7 +380,7 @@ section { padding: 70px 0; scroll-margin-top: 90px; }
   margin-left: auto; color: var(--blue-deep); font-size: 18px;
   letter-spacing: 1px; animation: blink 0.8s steps(2, start) infinite;
 }
-.notepad-body { padding: 30px 26px; }
+.notepad-body { padding: 30px 26px; flex: 1 1 auto; overflow: auto; }
 .notepad-body a {
   color: var(--cyan); text-decoration: none;
   display: block; font-size: 28px; margin: 10px 0;
