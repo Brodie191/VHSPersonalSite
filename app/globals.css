@@ -349,7 +349,16 @@ section { padding: 70px 0; scroll-margin-top: 90px; }
 .notepad-bar .dots { letter-spacing: 2px; }
 .notepad-tabs {
   background: var(--blue-lit); color: var(--blue-deep);
-  display: flex; gap: 22px; padding: 6px 14px; font-size: 22px;
+  display: flex; align-items: center; gap: 22px; padding: 6px 14px; font-size: 22px;
+}
+.notepad-tabs button {
+  background: none; border: none; padding: 0; margin: 0;
+  font: inherit; color: inherit; cursor: pointer;
+}
+.notepad-tabs button:hover { color: var(--white); }
+.notepad-status {
+  margin-left: auto; color: var(--blue-deep); font-size: 18px;
+  letter-spacing: 1px; animation: blink 0.8s steps(2, start) infinite;
 }
 .notepad-body { padding: 30px 26px; }
 .notepad-body a {
@@ -358,6 +367,7 @@ section { padding: 70px 0; scroll-margin-top: 90px; }
 }
 .notepad-body a::before { content: "> "; color: var(--dim); }
 .notepad-body a:hover { color: var(--yellow); }
+.notepad-body.cleared .erased-msg { color: var(--dim); font-size: 22px; margin: 10px 0; }
 
 /* ─── FOOTER ─────────────────────────────────────────────────── */
 .site-footer {
