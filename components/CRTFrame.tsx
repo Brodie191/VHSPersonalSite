@@ -7,7 +7,7 @@ const CHANNELS = [
   { cls: 'ch-green',  num: '02' },
   { cls: 'ch-amber',  num: '03' },
 ]
-
+// z-indexes: 9500, 9000, 8800, 60
 function fmtTime(ms: number) {
   const t = Math.floor(ms / 1000)
   const h = String(Math.floor(t / 3600)).padStart(2, '0')
